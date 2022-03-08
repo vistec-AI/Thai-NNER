@@ -4,27 +4,6 @@ from base import BaseModel
 import torch.nn.functional as F
 from transformers import AutoModel
 
-
-class WangChanBERTaModel(BaseModel):
-    def __init__(self, num_classes, lm_path):
-        super(WangChanBERTaModel, self).__init__()
-        self.path_lm = lm_path
-        self.num_classes = num_classes
-        self.lm = AutoModel.from_pretrained(
-            self.path_lm, 
-            output_hidden_states=True)
-
-        self.hidden_size = self.lm.config.hidden_size
-        self.fc1 = nn.Linear(self.hidden_size, self.num_classes)
-
-    def forward(self, input_ids, mask):
-        x = self.lm(input_ids=input_ids, attention_mask=mask)[2]
-        x = torch.stack(x[-4:],dim=-1).mean(-1) # change between sum and meen
-        x = self.fc1(x)
-        x = x.transpose(1,2)
-        return x
-
-
 class NNEModel(BaseModel):
     def __init__(self, num_classes, num_layers, lm_path):
         super(NNEModel, self).__init__()
