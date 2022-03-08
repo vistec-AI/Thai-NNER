@@ -41,3 +41,4 @@ def nne_conll_eval(batch_output, batch_targets, batch_mask, boundary_type,ids2ta
     assert temp_out_results[-18]=='micro' 
     f1 = float(temp_out_results[-14])
     return f1
+    
