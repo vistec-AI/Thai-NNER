@@ -123,7 +123,6 @@ class NERDataloader():
             temp_features['flat_lm_conll_ids']=flat_lm_conll_ids
             temp_features['nested_lm_conll_ids']=nested_lm_conll_ids
             features.append(temp_features)
-            
         return features
     
     def _features(self):

@@ -95,3 +95,4 @@ class Span2conll():
             else:
                 raise "Error"
         return results
+        

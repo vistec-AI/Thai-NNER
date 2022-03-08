@@ -14,6 +14,7 @@ class InputLM():
         input_ids, attention_mask, encode_dict = self._tokenizer_input(tokens)
         shifted_entities = self._shifted_entities_index(input_ids, entities, encode_dict)
         lm_tokens=[self.tokenizer.decode(w)for w in input_ids]
+        
         return {
             'attention_mask':attention_mask,
             'input_ids':input_ids,
