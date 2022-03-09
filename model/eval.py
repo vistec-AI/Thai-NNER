@@ -1,6 +1,7 @@
 import pandas as pd
 from tabulate import tabulate
 from collections import defaultdict
+from utils.unique import unique
 
 HEAD = ["tag", "precision", "recall", "f1-score", 
         "preds_true", "num_preds", "num_labels"]
@@ -116,11 +117,7 @@ class ClassEvaluator():
         show_results = tabulate([HEAD]+show_results)
         self.long_tail_eval(data)
         print(show_results)
-        
-        for group in groups:
-            print(f"\n<<< {group[0]} >>>")
-            print(tabulate([HEAD]+[x for x in show_results 
-                                    if x[0] in group]))
+
         if save_path==None:
             return report_results, show_results
         else:            
@@ -137,11 +134,9 @@ class ClassEvaluator():
         counts_predictions = defaultdict(lambda: {"true": 0, "false": 0})
         for index in range(len(data)):
             labels = data[index]['entities']
-            labels = [(item['span'], item['entity_type']) 
-                                    for item in labels]
-            predictions = data[index]['predictions']
-            predictions = [(item['span'], item['entity_type']) 
-                                        for item in predictions]
+            labels = unique([(item['span'], item['entity_type']) for item in labels])
+            predictions = unique(data[index]['predictions'])
+            predictions = [(item['span'], item['entity_type']) for item in predictions]
             for index in range(len(labels)):
                 item = labels[index]
                 tag = item[1]

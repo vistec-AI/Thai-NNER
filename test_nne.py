@@ -89,8 +89,8 @@ def main(config):
             batch_size = input_ids.shape[0]
 
             # Processing output
+            loss = 0
             output = model(input_ids, attention_mask)
-
             nested_lm_conll_ids = {l:None for l in range(len(layers_train))}
             for index, layer in enumerate(layers_train):
                 temp_nested_lm_conll_ids = torch.tensor(instance['nested_lm_conll_ids'][layer])
