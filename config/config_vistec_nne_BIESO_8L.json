@@ -1,0 +1,58 @@
+{
+    "name": "config_vistec_nne_BIESO_8L",
+    "n_gpu": 4,
+
+    "arch": {
+        "type": "NNEModel",
+        "args": {
+            "num_classes":417,
+            "num_layers": 8,
+            "lm_path":"data/lm/wangchanberta"
+        }
+    },
+
+    "data_loader": {
+        "type": "NERDataloader",
+        "args":{
+            "path_data": "data/dataset/vistec/",
+            "lm_path": "data/lm/wangchanberta",
+            "boundary_type":"BIESO",
+            "max_sent_length":512,
+            "batch_size": 16,
+            "max_layers": 8,
+            "shuffle": true,
+            "sample_data": false,
+            "debug":false
+        }
+    },
+
+    "optimizer": {
+        "type": "Adam",
+        "args":{
+            "lr": 1e-5
+        }
+    },
+
+    "loss": "cross_entropy_loss",
+    "metrics": ["nne_conll_eval"],
+
+    "lr_scheduler": {
+        "type": "StepLR",
+        "args": {
+            "step_size": 50,
+            "gamma": 0.1
+        }
+    },
+
+    "trainer": {
+        "type":"TrainerNNE",
+        "epochs": 500,
+        "verbosity": 2,
+        "save_dir": "data/save",
+        "monitor": "max val_nne_conll_eval",
+        "save_period": 1,
+        "early_stop": 16,
+        "layers_train": [0,1,2,3,4,5,6,7],
+        "tensorboard": true
+    }
+}
