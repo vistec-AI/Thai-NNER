@@ -132,11 +132,14 @@ class ClassEvaluator():
     def _counting(self, data):
         counts_labels = defaultdict(lambda: {"true": 0, "false": 0})
         counts_predictions = defaultdict(lambda: {"true": 0, "false": 0})
+        
         for index in range(len(data)):
-            labels = data[index]['entities']
-            labels = unique([(item['span'], item['entity_type']) for item in labels])
+            labels = unique(data[index]['entities'])
+            labels = [(item['span'], item['entity_type']) for item in labels]
+
             predictions = unique(data[index]['predictions'])
             predictions = [(item['span'], item['entity_type']) for item in predictions]
+
             for index in range(len(labels)):
                 item = labels[index]
                 tag = item[1]
