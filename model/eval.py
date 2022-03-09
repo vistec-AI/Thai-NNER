@@ -1,7 +1,7 @@
 import pandas as pd
 from tabulate import tabulate
-from collections import defaultdict
 from utils.unique import unique
+from collections import defaultdict
 
 HEAD = ["tag", "precision", "recall", "f1-score", 
         "preds_true", "num_preds", "num_labels"]
