@@ -132,7 +132,7 @@ class ClassEvaluator():
     def _counting(self, data):
         counts_labels = defaultdict(lambda: {"true": 0, "false": 0})
         counts_predictions = defaultdict(lambda: {"true": 0, "false": 0})
-        
+
         for index in range(len(data)):
             labels = unique(data[index]['entities'])
             labels = [(item['span'], item['entity_type']) for item in labels]
@@ -193,7 +193,7 @@ class ClassEvaluator():
             or num_predictions==0:
             return 0, 0, 0
         precision = float(predictions_true)/num_predictions
-        recall = float(labels_true)/num_labels
+        recall = float(predictions_true)/num_labels
         f1 = 2. / ( (1./precision) + (1./recall))
         precision=precision*100
         recall=recall*100
