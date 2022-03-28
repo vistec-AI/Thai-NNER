@@ -8,9 +8,11 @@ This work presents the first Thai Nested Named Entity Recognition (N-NER) datase
 [Colabs](https://colab.research.google.com/drive/16m7Vx0ezLpPY2PQLlIMlbfmI9KBO5o7A?usp=sharing)
 
 ## Model's Checkpoint
+Save checkpoints at "data/[checkpoints]"
 [checkpoints](https://drive.google.com/drive/folders/1t71ljTPO1W7xmVquyFhDVynHixlLWQ-J?usp=sharing)
 
 ## Dataset 
+Save dataset at "data/[scb-nner-th-2022]"
 [scb-nner-th-2022](https://drive.google.com/drive/folders/1lp3ZK4i2Q2SC77AoVTEPy9CHB8lAGFEK?usp=sharing)
 
 # Training/Testing
