@@ -27,7 +27,8 @@ python test_nne.py --resume [PATH]/checkpoint.pth
 tensorboard --logdir [PATH]/save/log/
 ```
 
-# Results
+## Results
+Experimental results
 ![Experimental results](/img/results.png)
 
 ## License
