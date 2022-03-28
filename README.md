@@ -1,7 +1,7 @@
 # Thai-NNER (Paper Name)
 
 ## Abstract / Motivation
-(In this work, we propose XXXXXXXXXXXX)
+This work presents the first Thai Nested Named Entity Recognition (N-NER) dataset. Thai N-NER consists of 264,798 mentions, 104 classes, and a maximum depth of 8 layers obtained from news articles and restaurant reviews, a total of 4894 documents. Our work, to the best of our knowledge, presents the largest non-English N-NER dataset and the first non-English one with fine-grained classes.
 
 
 ## Example
