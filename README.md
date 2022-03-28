@@ -9,15 +9,15 @@ This work presents the first Thai Nested Named Entity Recognition (N-NER) datase
 
 ## Model's Checkpoint
 Save checkpoints at "data/[checkpoints]": 
-[checkpoints](https://drive.google.com/drive/folders/1t71ljTPO1W7xmVquyFhDVynHixlLWQ-J?usp=sharing)
+[Download](https://drive.google.com/drive/folders/1t71ljTPO1W7xmVquyFhDVynHixlLWQ-J?usp=sharing)
 
 ## Dataset 
 Save dataset at "data/[scb-nner-th-2022]": 
-[scb-nner-th-2022](https://drive.google.com/drive/folders/1lp3ZK4i2Q2SC77AoVTEPy9CHB8lAGFEK?usp=sharing)
+[Download](https://drive.google.com/drive/folders/1lp3ZK4i2Q2SC77AoVTEPy9CHB8lAGFEK?usp=sharing)
 
 ## Pre-trained 
 Save pre-trained at "data/[lm]": 
-[pre-trained](https://drive.google.com/drive/folders/1tkCQbksNhnGPNXez1QUc7NA0VQ5IdkMb?usp=sharing)
+[Download](https://drive.google.com/drive/folders/1tkCQbksNhnGPNXez1QUc7NA0VQ5IdkMb?usp=sharing)
 
 ## Training/Testing
 ### Train
