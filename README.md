@@ -28,7 +28,7 @@ tensorboard --logdir [PATH]/save/log/
 ```
 
 # Results
-[Experimental results](/img/results.png)
+![Experimental results](/img/results.png)
 
 ## License
 CC-BY-SA 3.0
