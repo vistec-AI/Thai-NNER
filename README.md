@@ -34,6 +34,6 @@ tensorboard --logdir [PATH]/save/log/
 CC-BY-SA 3.0
 
 ## Acknowledgements
-- Dataset information: The Thai N-NER corpus is supported in part by the Digital Economy Pro- motion Agency (depa) Digital Infrastructure Fund MP-62-003 and Siam Commercial Bank. This dataset is released as scb-nner-th-2022.
+- Dataset information: The Thai N-NER corpus is supported in part by the Digital Economy Promotion Agency (depa) Digital Infrastructure Fund MP-62-003 and Siam Commercial Bank. This dataset is released as scb-nner-th-2022.
 
 - Training code: [Tensorflow-Project-Template](https://github.com/MrGemy95/Tensorflow-Project-Template) by [Mahmoud Gemy](https://github.com/MrGemy95)
