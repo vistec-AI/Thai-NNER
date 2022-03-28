@@ -1,5 +1,5 @@
 # Thai-NNER (Paper Name)
-Code associated with the paper [Thai Nested Named Entity Recognition Corpus](https://openreview.net/pdf?id=lS5OzqUIhsq) at ACL 2020.
+Code associated with the paper [Thai Nested Named Entity Recognition Corpus](https://openreview.net/pdf?id=lS5OzqUIhsq) at ACL 2022.
 
 ## Abstract / Motivation
 This work presents the first Thai Nested Named Entity Recognition (N-NER) dataset. Thai N-NER consists of 264,798 mentions, 104 classes, and a maximum depth of 8 layers obtained from news articles and restaurant reviews, a total of 4894 documents. Our work, to the best of our knowledge, presents the largest non-English N-NER dataset and the first non-English one with fine-grained classes.
@@ -28,12 +28,12 @@ tensorboard --logdir [PATH]/save/log/
 ```
 
 ## Results
-Experimental results
 ![Experimental results](/img/results.png)
 
 ## License
 CC-BY-SA 3.0
 
 ## Acknowledgements
-- Dataset information: XXXXXXXXXXXXXX
+- Dataset information: The Thai N-NER corpus is supported in part by the Digital Economy Pro- motion Agency (depa) Digital Infrastructure Fund MP-62-003 and Siam Commercial Bank. This dataset is released as scb-nner-th-2022.
+
 - Training code: [Tensorflow-Project-Template](https://github.com/MrGemy95/Tensorflow-Project-Template) by [Mahmoud Gemy](https://github.com/MrGemy95)
