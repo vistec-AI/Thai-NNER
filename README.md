@@ -1,4 +1,4 @@
-# Thai-NNER (Paper Name)
+# Thai-NNER (Thai Nested Named Entity Recognition Corpus)
 Code associated with the paper [Thai Nested Named Entity Recognition Corpus](https://openreview.net/pdf?id=lS5OzqUIhsq) at ACL 2022.
 
 ## Abstract / Motivation
@@ -8,23 +8,27 @@ This work presents the first Thai Nested Named Entity Recognition (N-NER) datase
 [Colabs](https://colab.research.google.com/drive/16m7Vx0ezLpPY2PQLlIMlbfmI9KBO5o7A?usp=sharing)
 
 ## Model's Checkpoint
-Save checkpoints at "data/[checkpoints]"
+Save checkpoints at "data/[checkpoints]": 
 [checkpoints](https://drive.google.com/drive/folders/1t71ljTPO1W7xmVquyFhDVynHixlLWQ-J?usp=sharing)
 
 ## Dataset 
-Save dataset at "data/[scb-nner-th-2022]"
+Save dataset at "data/[scb-nner-th-2022]": 
 [scb-nner-th-2022](https://drive.google.com/drive/folders/1lp3ZK4i2Q2SC77AoVTEPy9CHB8lAGFEK?usp=sharing)
 
-# Training/Testing
-## Train
+## Pre-trained 
+Save pre-trained at "data/[lm]": 
+[pre-trained](https://drive.google.com/drive/folders/1tkCQbksNhnGPNXez1QUc7NA0VQ5IdkMb?usp=sharing)
+
+## Training/Testing
+### Train
 ```
 python train.py --device 0,1 -c config.json
 ```
-## Test
+### Test
 ```
 python test_nne.py --resume [PATH]/checkpoint.pth
 ```
-## Tensorboard
+### Tensorboard
 ```
 tensorboard --logdir [PATH]/save/log/
 ```
