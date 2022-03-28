@@ -1,16 +1,17 @@
 # Thai-NNER (Paper Name)
+Code associated with the paper [Thai Nested Named Entity Recognition Corpus](https://openreview.net/pdf?id=lS5OzqUIhsq) at ACL 2020.
 
 ## Abstract / Motivation
 This work presents the first Thai Nested Named Entity Recognition (N-NER) dataset. Thai N-NER consists of 264,798 mentions, 104 classes, and a maximum depth of 8 layers obtained from news articles and restaurant reviews, a total of 4894 documents. Our work, to the best of our knowledge, presents the largest non-English N-NER dataset and the first non-English one with fine-grained classes.
 
-
 ## Example
-Example: [Colabs](https://colab.research.google.com/drive/16m7Vx0ezLpPY2PQLlIMlbfmI9KBO5o7A?usp=sharing) <br>
-## Model's Checkpoint
-XXX: []()
-## Dataset
-XXX: [Checkpoints and Data](https://drive.google.com/drive/folders/1hQ3HYI3sBJqpeabUMSVGGMdTHalCEv-5?usp=sharing)
+[Colabs](https://colab.research.google.com/drive/16m7Vx0ezLpPY2PQLlIMlbfmI9KBO5o7A?usp=sharing)
 
+## Model's Checkpoint
+[checkpoints](https://drive.google.com/drive/folders/1t71ljTPO1W7xmVquyFhDVynHixlLWQ-J?usp=sharing)
+
+## Dataset 
+[scb-nner-th-2022](https://drive.google.com/drive/folders/1lp3ZK4i2Q2SC77AoVTEPy9CHB8lAGFEK?usp=sharing)
 
 # Training/Testing
 ## Train
@@ -27,7 +28,7 @@ tensorboard --logdir [PATH]/save/log/
 ```
 
 # Results
-### เอาตารางคะแนนมาใส่ (เป็นรูปก็ได้ ง่ายดี แต่ถ้าเขียนเองได้ก็สวยดี)
+[Experimental results](/img/results.png)
 
 ## License
 CC-BY-SA 3.0
