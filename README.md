@@ -26,6 +26,9 @@ python test_nne.py --resume [PATH]/checkpoint.pth
 tensorboard --logdir [PATH]/save/log/
 ```
 
+# Results
+### เอาตารางคะแนนมาใส่ (เป็นรูปก็ได้ ง่ายดี แต่ถ้าเขียนเองได้ก็สวยดี)
+
 ## License
 CC-BY-SA 3.0
 
