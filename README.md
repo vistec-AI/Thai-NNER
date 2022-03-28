@@ -30,4 +30,5 @@ tensorboard --logdir [PATH]/save/log/
 CC-BY-SA 3.0
 
 ## Acknowledgements
-This project is inspired by the project [Tensorflow-Project-Template](https://github.com/MrGemy95/Tensorflow-Project-Template) by [Mahmoud Gemy](https://github.com/MrGemy95)
+- Dataset information: XXXXXXXXXXXXXX
+- Training code: [Tensorflow-Project-Template](https://github.com/MrGemy95/Tensorflow-Project-Template) by [Mahmoud Gemy](https://github.com/MrGemy95)
