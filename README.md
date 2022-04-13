@@ -8,15 +8,15 @@ This work presents the first Thai Nested Named Entity Recognition (N-NER) datase
 [Colabs](https://colab.research.google.com/drive/16m7Vx0ezLpPY2PQLlIMlbfmI9KBO5o7A?usp=sharing)
 
 ## Model's Checkpoint
-Save checkpoints at "data/[checkpoints]": 
+Download and save  models' checkpoints at the following path "data/[checkpoints]": 
 [Download](https://drive.google.com/drive/folders/1t71ljTPO1W7xmVquyFhDVynHixlLWQ-J?usp=sharing)
 
 ## Dataset 
-Save dataset at "data/[scb-nner-th-2022]": 
+Download and save the dataset at the following path "data/[scb-nner-th-2022]": 
 [Download](https://drive.google.com/drive/folders/1lp3ZK4i2Q2SC77AoVTEPy9CHB8lAGFEK?usp=sharing)
 
-## Pre-trained 
-Save pre-trained at "data/[lm]": 
+## Pre-trained Language Model
+Download and save the pre-trained language model at the following path "data/[lm]": 
 [Download](https://drive.google.com/drive/folders/1tkCQbksNhnGPNXez1QUc7NA0VQ5IdkMb?usp=sharing)
 
 ## Training/Testing
