@@ -7,6 +7,7 @@ This work presents the first Thai Nested Named Entity Recognition (N-NER) datase
 ## Example
 [Colabs](https://colab.research.google.com/drive/16m7Vx0ezLpPY2PQLlIMlbfmI9KBO5o7A?usp=sharing)
 
+# Dataset and Models
 ## Model's Checkpoint
 Download and save  models' checkpoints at the following path "data/[checkpoints]": 
 [Download](https://drive.google.com/drive/folders/1t71ljTPO1W7xmVquyFhDVynHixlLWQ-J?usp=sharing)
@@ -19,27 +20,41 @@ Download and save the dataset at the following path "data/[scb-nner-th-2022]":
 Download and save the pre-trained language model at the following path "data/[lm]": 
 [Download](https://drive.google.com/drive/folders/1tkCQbksNhnGPNXez1QUc7NA0VQ5IdkMb?usp=sharing)
 
-## Training/Testing
-### Train
+# Training/Testing
+## Train
 ```
 python train.py --device 0,1 -c config.json
 ```
-### Test
+## Test
 ```
 python test_nne.py --resume [PATH]/checkpoint.pth
 ```
-### Tensorboard
+## Tensorboard
 ```
 tensorboard --logdir [PATH]/save/log/
 ```
 
-## Results
+# Results
 ![Experimental results](/img/results.png)
+
+# Citation
+```
+@inproceedings{Buaphet-etal-2022-thai-nner,
+    title = "Thai Nested Named Entity Recognition Corpus",
+    author = "Buaphet, Weerayut  and
+      Udomcharoenchaikit, Can  and
+      Limkonchotiwat, Peerat and
+      Rutherford, Attapol  and 
+      Nutanong, Sarana",
+    booktitle = "Findings of the Association for Computational Linguistics: AACL 2022"
+    year = "2022",
+    publisher = "Association for Computational Linguistics",
+}
+```
 
 ## License
 CC-BY-SA 3.0
 
 ## Acknowledgements
 - Dataset information: The Thai N-NER corpus is supported in part by the Digital Economy Promotion Agency (depa) Digital Infrastructure Fund MP-62-003 and Siam Commercial Bank. This dataset is released as scb-nner-th-2022.
-
 - Training code: [Tensorflow-Project-Template](https://github.com/MrGemy95/Tensorflow-Project-Template) by [Mahmoud Gemy](https://github.com/MrGemy95)
