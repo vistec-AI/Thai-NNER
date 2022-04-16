@@ -46,7 +46,7 @@ tensorboard --logdir [PATH]/save/log/
       Limkonchotiwat, Peerat and
       Rutherford, Attapol  and 
       Nutanong, Sarana",
-    booktitle = "Findings of the Association for Computational Linguistics: AACL 2022"
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2022"
     year = "2022",
     publisher = "Association for Computational Linguistics",
 }
