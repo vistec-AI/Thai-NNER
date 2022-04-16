@@ -18,7 +18,7 @@ Download and save the dataset at the following path "data/[scb-nner-th-2022]":
 
 ## Pre-trained Language Model
 Download and save the pre-trained language model at the following path "data/[lm]": 
-[Download](https://drive.google.com/drive/folders/1tkCQbksNhnGPNXez1QUc7NA0VQ5IdkMb?usp=sharing)
+[Download](https://drive.google.com/drive/folders/1tkkTTMx0iFm1DA8SFsGQiXZy1TuDBTv_?usp=sharing)
 
 # Training/Testing
 ## Train
