@@ -19,7 +19,7 @@ Example: 0906_214036/model_best.pth
 
 and use ```covert_model2use.py``` script by
 
-> python -i 0906_214036/model_best.pth -o model.pth
+> python covert_model2use.py -i 0906_214036/model_best.pth -o model.pth
 
 ### Usage Example
 
