@@ -17,11 +17,15 @@ You needs to download model from "data/[checkpoints]":
 
 Example: 0906_214036/model_best.pth
 
+and use ```covert_model2use.py``` script by
+
+> python -i 0906_214036/model_best.pth -o model.pth
+
 ### Usage Example
 
 ```python
 from thai_nner import NNER
-nner = NNER("model_best.pth")
+nner = NNER("model.pth")
 nner.get_tag("วันนี้วันที่ 5 เมษายน 2565 เป็นวันที่อากาศดีมาก")
 # output: (['<s>', 'วันนี้', 'วันที่', '', '', '5', '', '', 'เมษายน', '', '', '25', '65', '', '', 'เป็น', 'วันที่', '', 'อากาศ', '', 'ดีมาก', '</s>'], [{'text': ['วันนี้'], 'span': [1, 2], 'entity_type': 'rel'}, {'text': ['วันที่', '', '', '5'], 'span': [2, 6], 'entity_type': 'day'}, {'text': ['วันที่', '', '', '5', '', '', 'เมษายน', '', '', '25', '65'], 'span': [2, 13], 'entity_type': 'date'}, {'text': ['', '5'], 'span': [4, 6], 'entity_type': 'cardinal'}, {'text': ['', 'เมษายน'], 'span': [7, 9], 'entity_type': 'month'}, {'text': ['', '25', '65'], 'span': [10, 13], 'entity_type': 'year'}])
 ```
