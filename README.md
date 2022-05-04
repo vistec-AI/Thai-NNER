@@ -31,7 +31,13 @@ nner.get_tag("วันนี้วันที่ 5 เมษายน 2565 เ
 ```
 
 
-## Example (test and useage)
+## Example
+### Python library
+
+[Colabs](https://colab.research.google.com/drive/1SEazoGm9tZSElTxIhdyi7DwNMDO-YtJY?usp=sharing)
+
+### Test
+
 [Colabs](https://colab.research.google.com/drive/16m7Vx0ezLpPY2PQLlIMlbfmI9KBO5o7A?usp=sharing)
 
 # Dataset and Models
