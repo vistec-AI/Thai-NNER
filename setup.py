@@ -15,7 +15,7 @@ setup(
     author="Weerayut Buaphet",
     author_email="weerayut.fame@gmail.com",
     url="https://github.com/vistec-AI/Thai-NNER",
-    packages=find_packages(),
+    packages=find_packages(include=['parse_config', 'thai_nner', 'thai_nner.*', 'thai_nner.data_loader.*', 'thai_nner.utils.*']),
     python_requires=">=3.6",
     package_data={
         "thai_nner": [
