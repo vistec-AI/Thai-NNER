@@ -24,6 +24,8 @@ and use ```convert_model2use.py``` script by
 ### Usage Example
 
 ```python
+import os
+os.environ['CUDA_VISIBLE_DEVICES'] = "0" # for non-gpu: os.environ['CUDA_VISIBLE_DEVICES'] = ""
 from thai_nner import NNER
 nner = NNER("model.pth")
 nner.get_tag("วันนี้วันที่ 5 เมษายน 2565 เป็นวันที่อากาศดีมาก")
