@@ -8,7 +8,7 @@ with open("requirements.txt","r",encoding="utf-8-sig") as f:
 
 setup(
     name="thai_nner",
-    version="0.1",
+    version="0.2",
     description="Thai Nested Named Entity Recognition",
     long_description=readme,
     long_description_content_type="text/markdown",

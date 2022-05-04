@@ -15,11 +15,11 @@ This work presents the first Thai Nested Named Entity Recognition (N-NER) datase
 You needs to download model from "data/[checkpoints]": 
 [Download](https://drive.google.com/drive/folders/1t71ljTPO1W7xmVquyFhDVynHixlLWQ-J?usp=sharing)
 
-Example: 0906_214036/model_best.pth
+Example: 0906_214036/checkpoint.pth
 
-and use ```covert_model2use.py``` script by
+and use ```convert_model2use.py``` script by
 
-> python covert_model2use.py -i 0906_214036/model_best.pth -o model.pth
+> python convert_model2use.py -i 0906_214036/checkpoint.pth -o model.pth
 
 ### Usage Example
 
