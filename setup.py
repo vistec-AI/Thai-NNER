@@ -36,7 +36,7 @@ setup(
         "Thai language",
     ],
     classifiers=[
-        "Development Status :: 5 - Production/Stabl",
+        "Development Status :: 5 - Production/Stable",
         "Programming Language :: Python :: 3",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
