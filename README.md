@@ -4,7 +4,30 @@ Code associated with the paper [Thai Nested Named Entity Recognition Corpus](htt
 ## Abstract / Motivation
 This work presents the first Thai Nested Named Entity Recognition (N-NER) dataset. Thai N-NER consists of 264,798 mentions, 104 classes, and a maximum depth of 8 layers obtained from news articles and restaurant reviews, a total of 4894 documents. Our work, to the best of our knowledge, presents the largest non-English N-NER dataset and the first non-English one with fine-grained classes.
 
-## Example
+# How to use?
+
+## Install
+
+> pip install thai_nner
+
+## Usage
+
+You needs to download model from "data/[checkpoints]": 
+[Download](https://drive.google.com/drive/folders/1t71ljTPO1W7xmVquyFhDVynHixlLWQ-J?usp=sharing)
+
+Example: 0906_214036/model_best.pth
+
+### Usage Example
+
+```python
+from thai_nner import NNER
+nner = NNER("model_best.pth")
+nner.get_tag("วันนี้วันที่ 5 เมษายน 2565 เป็นวันที่อากาศดีมาก")
+# output: (['<s>', 'วันนี้', 'วันที่', '', '', '5', '', '', 'เมษายน', '', '', '25', '65', '', '', 'เป็น', 'วันที่', '', 'อากาศ', '', 'ดีมาก', '</s>'], [{'text': ['วันนี้'], 'span': [1, 2], 'entity_type': 'rel'}, {'text': ['วันที่', '', '', '5'], 'span': [2, 6], 'entity_type': 'day'}, {'text': ['วันที่', '', '', '5', '', '', 'เมษายน', '', '', '25', '65'], 'span': [2, 13], 'entity_type': 'date'}, {'text': ['', '5'], 'span': [4, 6], 'entity_type': 'cardinal'}, {'text': ['', 'เมษายน'], 'span': [7, 9], 'entity_type': 'month'}, {'text': ['', '25', '65'], 'span': [10, 13], 'entity_type': 'year'}])
+```
+
+
+## Example (test and useage)
 [Colabs](https://colab.research.google.com/drive/16m7Vx0ezLpPY2PQLlIMlbfmI9KBO5o7A?usp=sharing)
 
 # Dataset and Models
@@ -36,6 +59,7 @@ tensorboard --logdir [PATH]/save/log/
 
 # Results
 ![Experimental results](/img/results.png)
+
 
 # Citation
 ```
