@@ -24,11 +24,7 @@ class NNER:
             temp = pathlib.PosixPath
             pathlib.PosixPath = pathlib.WindowsPath
             self.state_dict = torch.load(self.path_model, map_location=torch.device(device))
-        self.state_dict = self.state_dict['state_dict']
-        for key, value in self.state_dict.items():
-            self.state_dict_new[str(key).replace('module.', '', 1)] = value
-        del self.state_dict
-        self.model.load_state_dict(self.state_dict_new)
+        self.model.load_state_dict(self.state_dict)
         self.PAD = '<pad>'
         self.data = Data(path_data=path_data, boundary_type=boundary_type)
 
