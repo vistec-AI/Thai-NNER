@@ -7,6 +7,7 @@ from thai_nner.model import NNEModel
 from thai_nner.data import Data
 from thai_nner.utils.prediction import predict, show
 import thai_nner
+from parse_config import ConfigParser
 thai_nner_path = os.path.dirname(thai_nner.__file__)
 
 
