@@ -13,7 +13,7 @@ This work presents the first Thai Nested Named Entity Recognition (N-NER) datase
 ## Usage
 
 You needs to download model from "data/[checkpoints]": 
-[Download](https://drive.google.com/drive/folders/1t71ljTPO1W7xmVquyFhDVynHixlLWQ-J?usp=sharing)
+[Download](https://drive.google.com/drive/folders/1Dy-360iZ9hIA-xA0yizSwmpM8sx6rrjJ?usp=share_link)
 
 Example: 0906_214036/checkpoint.pth
 
