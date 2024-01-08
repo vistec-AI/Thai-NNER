@@ -25,8 +25,6 @@ pip install thai_nner
 First, download the necessary resources (models, datasets, and pre-trained language models) from [here](https://drive.google.com/drive/folders/1Dy-360iZ9hIA-xA0yizSwmpM8sx6rrjJ?usp=share_link) and use the `convert_model2use.py` script to prepare it. 
 
 
-> **Note**: We withhold the test set for [the Bangkok AI Hack 2023 event](https://linktr.ee/BangkokAIHack2023).  We will upload the test set again after the hackathon is over. 
-
 ```
 python convert_model2use.py -i 0906_214036/checkpoint.pth -o model.pth
 ```
