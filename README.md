@@ -22,7 +22,7 @@ pip install thai_nner
 
 ### Model Preparation
 
-First, download the necessary resources (models, datasets, and pre-trained language models) from [here](https://drive.google.com/drive/folders/1Dy-360iZ9hIA-xA0yizSwmpM8sx6rrjJ?usp=share_link) and use the `convert_model2use.py` script to prepare it. 
+Download the necessary resources (models, datasets, and pre-trained language models) from [here](https://drive.google.com/drive/folders/1Dy-360iZ9hIA-xA0yizSwmpM8sx6rrjJ?usp=share_link) and use the `convert_model2use.py` script to prepare them. 
 
 
 ```
@@ -42,7 +42,6 @@ print(tags)
 ```
 
 ### Examples & Testing
-
 - [Python Library Demo](https://colab.research.google.com/drive/1SEazoGm9tZSElTxIhdyi7DwNMDO-YtJY?usp=sharing)
 - [Functionality Testing](https://colab.research.google.com/drive/16m7Vx0ezLpPY2PQLlIMlbfmI9KBO5o7A?usp=sharing)
 
