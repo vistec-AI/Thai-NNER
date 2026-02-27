@@ -24,10 +24,12 @@ pip install thai_nner
 
 Download the necessary resources (models, datasets, and pre-trained language models) from [here](https://drive.google.com/drive/folders/1Dy-360iZ9hIA-xA0yizSwmpM8sx6rrjJ?usp=share_link) and use the `convert_model2use.py` script to prepare them. 
 
-
 ```
 python convert_model2use.py -i 0906_214036/checkpoint.pth -o model.pth
 ```
+- [Dataset HF: json format](https://huggingface.co/datasets/weerayut/thai-nner-json)
+- [Dataset HF: conll format](https://huggingface.co/datasets/weerayut/thai-nner-conll)
+
 
 ### Sample Usage
 
